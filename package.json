@@ -16,6 +16,7 @@
     "gh-pages": "^6.2.0",
     "gulp": "^5.0.0",
     "gulp-svg-sprite": "^2.0.3",
+    "swiper": "^11.1.15",
     "vite": "^6.0.0"
   },
   "dependencies": {

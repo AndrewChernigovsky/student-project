@@ -62,3 +62,70 @@ h1 {
 .image__hotel {
   border: 50px solid red;
 }
+
+.review {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  bottom: 40px;
+  z-index: 1;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+  width: 300px;
+  left: 20px;
+
+  p {
+    margin: 0;
+  }
+
+  &__avatar {
+    position: relative;
+
+    img {
+      position: absolute;
+      right: -24px;
+      top: -60px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 30px;
+  }
+}
+
+.swiper-intro {
+  .swiper-slide-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &__gallery {
+    width: 50%;
+
+    &:hover {
+      .review {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+}
+
+.swiper-intro-gallery-thumbs {
+  width: 100%;
+  overflow: hidden;
+}
