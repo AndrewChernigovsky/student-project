@@ -3,6 +3,11 @@ import svgSprite from 'gulp-svg-sprite';
 
 const config = {
   mode: {
+    view: {
+      render: {
+        scss: false
+      }
+    },
     symbol: {
       sprite: '../sprite.svg',
       render: {
