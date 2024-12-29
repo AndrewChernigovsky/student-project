@@ -7,18 +7,12 @@ const config = {
       render: {
         scss: false
       }
-    },
-    symbol: {
-      sprite: '../sprite.svg',
-      render: {
-        css: false
-      }
     }
   }
 };
 
 export const sprite = () => {
-  return gulp.src(['./public/assets/vectors/**/*.svg', '!./public/assets/vectors/sprite.svg'])
+  return gulp.src(['./src/icons/**/*.svg', '!./public/assets/vectors/sprite.svg'])
     .pipe(svgSprite(config))
     .pipe(gulp.dest('./public/assets/vectors/'));
 };

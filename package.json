@@ -8,16 +8,18 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "sprite": "gulp sprite",
+    "sprite": "gulp sprite && node sprite.js",
     "optimaze:img": "node sharp.js",
-    "optimaze:all": "sprite && optimaze:img"
+    "optimaze:all": "pnpm run sprite && pnpm run optimaze:img"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0",
     "gulp": "^5.0.0",
     "gulp-svg-sprite": "^2.0.3",
+    "svg-sprite": "^2.0.4",
     "swiper": "^11.1.15",
     "vite": "^6.0.0",
+    "sharp": "^0.33.5",
     "vite-plugin-svg-sprite": "^0.5.2"
   },
   "dependencies": {
